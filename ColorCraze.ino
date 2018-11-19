@@ -95,7 +95,7 @@ void drawSlots(int numSlots) {
       matrix.drawRect(startWidth, 0, 7, 15, matrix.Color333(1, 1, 1));
     }
     if (numSlots == 5) {
-      int startWidth=i*6;
+      int startWidth=i*6 + 1 ;
       matrix.drawRect(startWidth, 0, 5, 15, matrix.Color333(1, 1, 1));
     }
   }
@@ -138,7 +138,7 @@ void drawCard(Color color, int slot, int numSlots) {
     matrix.fillRect(startWidth, 1, 5, 13, matrix.Color333(r, g, b));
   }
   if (numSlots == 5) {
-    startWidth=(slot * 6) + 1;
+    startWidth=(slot * 6) + 2;
     matrix.fillRect(startWidth, 1, 3, 13, matrix.Color333(r, g, b));
   }
 }

@@ -95,7 +95,7 @@ void drawSlots(int numSlots) {
       matrix.drawRect(startWidth, 0, 7, 15, matrix.Color333(1, 1, 1));
     }
     if (numSlots == 5) {
-      int startWidth=i*6;
+      int startWidth=i*6 + 1;
       matrix.drawRect(startWidth, 0, 5, 15, matrix.Color333(1, 1, 1));
     }
   }
